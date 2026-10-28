@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="it" class="scroll-smooth motion-reduce:scroll-auto">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Costruzioni Molinari: una piccola impresa edile, un grande impegno. Ristrutturazioni, nuove costruzioni e manutenzioni con interventi rapidi e costi giusti.">
+  <meta name="theme-color" content="#ae3d2c">
+  <title>Costruzioni Molinari | Fatti bene. Dalle fondamenta.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23ae3d2c'/%3E%3Cpath d='M8 29V11h6l6 9 6-9h6v18h-6V20l-6 8-6-8v9z' fill='%23fafafa'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brick: '#ae3d2c', ink: '#242825', mineral: '#edf0eb', paper: '#fafaf8' },
+          fontFamily: { sans: ['Manrope', 'sans-serif'], display: ['Barlow Condensed', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <style>
+    :focus-visible { outline: 3px solid #ae3d2c; outline-offset: 5px; }
+    ::selection { background: #ae3d2c; color: #fafaf8; }
+    input, textarea { accent-color: #ae3d2c; }
+  </style>
+</head>
+<body class="bg-paper font-sans text-ink antialiased">
+  <a href="#contenuto" class="sr-only z-50 bg-paper p-4 focus:not-sr-only focus:absolute">Vai al contenuto</a>
+  <header class="relative z-30 border-b border-ink/10 bg-paper">
+    <div class="mx-auto flex h-24 max-w-[1440px] items-center justify-between gap-6 px-6 md:px-12 lg:px-20">
+      <a href="#" aria-label="Costruzioni Molinari, inizio pagina" class="flex items-center gap-3">
+        <span class="flex h-11 w-11 items-center justify-center bg-brick font-display text-3xl font-bold text-paper" aria-hidden="true">M</span>
+        <span class="leading-none"><span class="block text-[10px] font-bold uppercase">Costruzioni</span><span class="mt-1 block font-display text-3xl font-semibold uppercase">Molinari<span class="text-brick">.</span></span></span>
+      </a>
+      <nav aria-label="Navigazione principale" class="hidden items-center gap-9 text-xs font-bold md:flex">
+        <a href="#impresa" class="transition-colors hover:text-brick">L'impresa</a>
+        <a href="#servizi" class="transition-colors hover:text-brick">Cosa facciamo</a>
+        <a href="#progetti" class="transition-colors hover:text-brick">I progetti</a>
+      </nav>
+      <a href="#contatti" class="hidden items-center gap-5 bg-brick px-5 py-4 text-xs font-bold text-paper transition-colors hover:bg-ink md:inline-flex">Parliamo del tuo progetto <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
+      <button id="menu-toggle" type="button" class="flex h-11 w-11 items-center justify-center border border-ink/20 md:hidden" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-menu"><i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i></button>
+    </div>
+    <nav id="mobile-menu" aria-label="Navigazione mobile" hidden class="absolute inset-x-0 top-full border-b border-ink/20 bg-paper px-6 py-6 shadow-lg md:hidden">
+      <div class="flex flex-col gap-6 text-sm font-bold"><a href="#impresa">L'impresa</a><a href="#servizi">Cosa facciamo</a><a href="#progetti">I progetti</a><a href="#contatti" class="text-brick">Parliamo del tuo progetto</a></div>
+    </nav>
+  </header>
+
+  <main id="contenuto">
+    <section aria-labelledby="hero-title" class="relative isolate flex min-h-[620px] items-center overflow-hidden bg-ink md:min-h-[650px]">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2400&q=85" alt="Muratori al lavoro in un cantiere edile, tra attrezzature e strutture in costruzione" width="2400" height="1600" fetchpriority="high" class="absolute inset-0 -z-20 h-full w-full object-cover object-[60%_center]">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-ink/90 via-ink/50 to-ink/5" aria-hidden="true"></div>
+      <div class="mx-auto w-full max-w-[1440px] px-6 pb-24 pt-16 md:px-12 lg:px-20">
+        <p class="mb-7 flex items-center gap-3 text-[11px] font-bold uppercase text-paper"><span class="h-2 w-2 bg-[#e89d7d]" aria-hidden="true"></span> Piccola impresa. Grande impegno.</p>
+        <h1 id="hero-title" class="max-w-3xl font-display text-[56px] font-semibold uppercase leading-[0.94] text-paper sm:text-[88px] lg:text-[108px]">Costruzioni<br>Molinari<span class="text-[#e89d7d]">.</span></h1>
+        <p class="mt-6 font-display text-[30px] font-medium leading-tight text-paper sm:text-4xl">Fatti bene. Dalle fondamenta.</p>
+        <p class="mt-5 max-w-md text-sm leading-7 text-paper/85">Ristrutturiamo, costruiamo, ci prendiamo cura dei tuoi spazi. Una squadra concreta, interventi veloci e la seriet&agrave; di chi ci mette la faccia.</p>
+        <a href="#contatti" class="mt-8 inline-flex items-center gap-8 bg-brick px-6 py-4 text-xs font-bold text-paper transition-colors hover:bg-[#8e3023]">Raccontaci la tua idea <i data-lucide="arrow-up-right" class="h-5 w-5" aria-hidden="true"></i></a>
+      </div>
+      <div class="absolute inset-x-0 bottom-0 border-t border-paper/25">
+        <div class="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-6 py-5 text-[10px] font-semibold text-paper/85 md:px-12 lg:px-20"><span>Ristrutturazioni &nbsp; / &nbsp; Nuove costruzioni &nbsp; / &nbsp; Manutenzioni</span><a href="#impresa" aria-label="Scopri l'impresa" class="hidden sm:block"><i data-lucide="arrow-down" class="h-5 w-5" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+
+    <section id="impresa" class="scroll-mt-8 py-20 md:py-28">
+      <div class="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-2 md:gap-16 md:px-12 lg:gap-24 lg:px-20">
+        <div>
+          <p class="mb-5 text-[10px] font-extrabold uppercase text-brick">01 / L'impresa</p>
+          <h2 class="font-display text-5xl font-semibold leading-[1.05] sm:text-6xl">Le dimensioni giuste.<br>La cura che meriti.</h2>
+          <p class="mt-7 max-w-lg text-sm leading-7 text-ink/75">Siamo una piccola impresa edile con un'idea semplice: lavorare bene, rispettare gli impegni e trovare soluzioni concrete. Seguiamo ogni intervento da vicino, dal primo sopralluogo all'ultima finitura.</p>
+          <p class="mt-4 max-w-lg text-sm leading-7 text-ink/75">La nostra forza &egrave; una squadra agile, presente sul territorio e pronta a organizzarsi in tempi rapidi. Meno passaggi, un confronto diretto e costi giusti, chiari fin dall'inizio.</p>
+          <a href="#contatti" class="mt-7 inline-flex items-center gap-4 border-b border-brick pb-2 text-xs font-bold text-brick">Conosciamoci sul tuo prossimo cantiere <i data-lucide="arrow-up-right" class="h-4 w-4" aria-hidden="true"></i></a>
+        </div>
+        <div class="relative pb-10 pl-5 md:pl-0">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=85" alt="Macchinari e gru impegnati nella costruzione di un edificio" width="1000" height="800" loading="lazy" class="aspect-[5/4] w-full object-cover">
+          <div class="absolute bottom-0 left-0 flex max-w-[90%] items-center gap-5 bg-mineral px-6 py-6 md:-left-6 md:px-8">
+            <i data-lucide="hard-hat" class="h-9 w-9 shrink-0 text-brick" aria-hidden="true"></i><p class="font-display text-2xl font-medium leading-tight">Persone vere.<br>Lavori fatti a regola d'arte.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servizi" class="scroll-mt-8 bg-mineral py-16 md:py-24">
+      <div class="mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20">
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div><p class="mb-5 text-[10px] font-extrabold uppercase text-brick">02 / Cosa facciamo</p><h2 class="font-display text-5xl font-semibold sm:text-6xl">Dal progetto, al fatto.</h2></div>
+          <p class="max-w-xs text-sm leading-7 text-ink/70">Un unico interlocutore.<br>La stessa attenzione, a ogni scala.</p>
+        </div>
+        <div class="border-t border-ink/20">
+          <a href="#contatti" class="group grid grid-cols-[32px_1fr_24px] items-center gap-3 border-b border-ink/20 py-7 md:grid-cols-[70px_1fr_1fr_32px] md:gap-6"><span class="text-xs text-brick">01</span><h3 class="font-display text-3xl font-medium md:text-4xl">Ristrutturazioni</h3><p class="col-start-2 text-xs leading-6 text-ink/70 md:col-auto">Nuova vita a case e ambienti: opere murarie, rifacimenti e finiture curate.</p><i data-lucide="arrow-up-right" class="col-start-3 row-start-1 h-6 w-6 text-brick transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transform-none md:col-auto md:row-auto" aria-hidden="true"></i></a>
+          <a href="#contatti" class="group grid grid-cols-[32px_1fr_24px] items-center gap-3 border-b border-ink/20 py-7 md:grid-cols-[70px_1fr_1fr_32px] md:gap-6"><span class="text-xs text-brick">02</span><h3 class="font-display text-3xl font-medium md:text-4xl">Nuove costruzioni</h3><p class="col-start-2 text-xs leading-6 text-ink/70 md:col-auto">Dalle fondamenta alle finiture, per dare forma a nuovi spazi solidi e funzionali.</p><i data-lucide="arrow-up-right" class="col-start-3 row-start-1 h-6 w-6 text-brick transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transform-none md:col-auto md:row-auto" aria-hidden="true"></i></a>
+          <a href="#contatti" class="group grid grid-cols-[32px_1fr_24px] items-center gap-3 border-b border-ink/20 py-7 md:grid-cols-[70px_1fr_1fr_32px] md:gap-6"><span class="text-xs text-brick">03</span><h3 class="font-display text-3xl font-medium md:text-4xl">Interventi e manutenzioni</h3><p class="col-start-2 text-xs leading-6 text-ink/70 md:col-auto">Ripristini, sistemazioni esterne e piccoli lavori, affrontati con la giusta prontezza.</p><i data-lucide="arrow-up-right" class="col-start-3 row-start-1 h-6 w-6 text-brick transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transform-none md:col-auto md:row-auto" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="progetti" class="scroll-mt-8 py-20 md:py-28">
+      <div class="mx-auto max-w-[1440px] px-6 md:px-12 lg:px-20">
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="mb-5 text-[10px] font-extrabold uppercase text-brick">03 / Progetti e possibilit&agrave;</p><h2 class="font-display text-5xl font-semibold sm:text-6xl">Spazi che cambiano.</h2></div><p class="max-w-xs text-xs leading-6 text-ink/65">Tre esempi di intervento. Le immagini sono illustrative e non rappresentano lavori realizzati dall'impresa.</p></div>
+        <div class="grid gap-10 md:grid-cols-3 md:gap-7">
+          <article>
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Esempio illustrativo di soggiorno luminoso dopo una ristrutturazione" width="900" height="1050" loading="lazy" class="aspect-[6/7] w-full object-cover">
+            <div class="mt-5 flex items-center justify-between text-[10px] font-bold uppercase text-brick"><span>Ristrutturazione</span><span class="text-ink/50">01</span></div>
+            <h3 class="mt-3 font-display text-3xl font-medium">Una casa, un nuovo inizio.</h3>
+            <p class="mt-3 text-xs leading-6 text-ink/70">Ridistribuzione degli ambienti, rinnovo delle superfici e finiture per una casa pi&ugrave; funzionale, da vivere ogni giorno.</p>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=85" alt="Esempio illustrativo di nuova abitazione contemporanea con giardino" width="900" height="1050" loading="lazy" class="aspect-[6/7] w-full object-cover">
+            <div class="mt-5 flex items-center justify-between text-[10px] font-bold uppercase text-brick"><span>Nuova costruzione</span><span class="text-ink/50">02</span></div>
+            <h3 class="mt-3 font-display text-3xl font-medium">Il futuro prende forma.</h3>
+            <p class="mt-3 text-xs leading-6 text-ink/70">Una nuova abitazione: strutture solide, spazi ben pensati e attenzione ai dettagli, dalle prime opere alla consegna.</p>
+          </article>
+          <article>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Esempio illustrativo di spazio esterno con pavimentazione e area verde" width="900" height="1050" loading="lazy" class="aspect-[6/7] w-full object-cover">
+            <div class="mt-5 flex items-center justify-between text-[10px] font-bold uppercase text-brick"><span>Sistemazione esterni</span><span class="text-ink/50">03</span></div>
+            <h3 class="mt-3 font-display text-3xl font-medium">Bello, anche fuori.</h3>
+            <p class="mt-3 text-xs leading-6 text-ink/70">Ripristino di un cortile, rifacimento delle pavimentazioni e piccole opere per rendere gli esterni pi&ugrave; curati e pratici.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="metodo-title" class="bg-ink py-16 text-paper md:py-20">
+      <div class="mx-auto grid max-w-[1440px] gap-10 px-6 md:grid-cols-[1fr_2fr] md:gap-16 md:px-12 lg:px-20">
+        <div><p class="mb-5 text-[10px] font-bold uppercase text-[#e89d7d]">Il nostro modo di lavorare</p><h2 id="metodo-title" class="font-display text-4xl font-medium leading-tight">Pochi passaggi.<br>Impegni chiari.</h2></div>
+        <ol class="grid gap-8 sm:grid-cols-3">
+          <li class="border-t border-paper/25 pt-5"><span class="text-xs text-[#e89d7d]">01 / Ci ascoltiamo</span><h3 class="mt-5 font-display text-2xl">Partiamo da te.</h3><p class="mt-3 text-xs leading-6 text-paper/70">Ci racconti cosa serve. Valutiamo insieme il lavoro e organizziamo un sopralluogo.</p></li>
+          <li class="border-t border-paper/25 pt-5"><span class="text-xs text-[#e89d7d]">02 / Facciamo chiarezza</span><h3 class="mt-5 font-display text-2xl">Un piano concreto.</h3><p class="mt-3 text-xs leading-6 text-paper/70">Definiamo interventi, tempi e preventivo. Sai cosa aspettarti, prima di iniziare.</p></li>
+          <li class="border-t border-paper/25 pt-5"><span class="text-xs text-[#e89d7d]">03 / Ci mettiamo al lavoro</span><h3 class="mt-5 font-display text-2xl">Dritti al risultato.</h3><p class="mt-3 text-xs leading-6 text-paper/70">Un cantiere seguito da vicino e un confronto diretto, fino all'ultima finitura.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contatti" class="scroll-mt-8 py-20 md:py-28">
+      <div class="mx-auto grid max-w-[1440px] gap-12 px-6 md:grid-cols-[0.9fr_1.1fr] md:gap-20 md:px-12 lg:px-20">
+        <div><p class="mb-5 text-[10px] font-extrabold uppercase text-brick">04 / Facciamo il primo passo</p><h2 class="font-display text-5xl font-semibold leading-[1.05] sm:text-6xl">Hai un progetto?<br>Parliamone<span class="text-brick">.</span></h2><p class="mt-6 max-w-sm text-sm leading-7 text-ink/75">Un'idea da costruire, uno spazio da rinnovare o un lavoro da sistemare. Raccontaci cosa hai in mente.</p><div class="mt-9 flex items-start gap-4 border-t border-ink/15 pt-7"><i data-lucide="handshake" class="h-6 w-6 shrink-0 text-brick" aria-hidden="true"></i><div><h3 class="text-sm font-bold">Lavoriamo insieme?</h3><p class="mt-2 max-w-xs text-xs leading-6 text-ink/70">Sei un artigiano, un professionista o cerchi un'opportunit&agrave; nella nostra squadra? Scegli &ldquo;Collaborazione&rdquo; e presentati.</p></div></div></div>
+        <form id="contact-form" class="min-w-0" aria-describedby="email-note">
+          <fieldset><legend class="mb-3 text-xs font-bold">Di cosa vuoi parlarci?</legend><div class="flex flex-wrap gap-3"><label class="cursor-pointer"><input class="peer sr-only" type="radio" name="tipo" value="Un progetto" checked><span class="inline-flex items-center gap-2 border border-ink/25 px-4 py-3 text-xs font-semibold peer-checked:border-brick peer-checked:bg-brick peer-checked:text-paper peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-4 peer-focus-visible:outline-brick"><i data-lucide="house" class="h-4 w-4" aria-hidden="true"></i>Un progetto</span></label><label class="cursor-pointer"><input class="peer sr-only" type="radio" name="tipo" value="Collaborazione"><span class="inline-flex items-center gap-2 border border-ink/25 px-4 py-3 text-xs font-semibold peer-checked:border-brick peer-checked:bg-brick peer-checked:text-paper peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-4 peer-focus-visible:outline-brick"><i data-lucide="handshake" class="h-4 w-4" aria-hidden="true"></i>Collaborazione</span></label></div></fieldset>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2"><div><label for="nome" class="mb-2 block text-xs font-bold">Nome e cognome <span aria-hidden="true">*</span></label><input id="nome" name="nome" autocomplete="name" required maxlength="120" class="w-full border border-ink/25 bg-transparent px-4 py-3 text-sm placeholder:text-ink/45" placeholder="Come ti chiami?"></div><div><label for="email" class="mb-2 block text-xs font-bold">Email <span aria-hidden="true">*</span></label><input id="email" type="email" name="email" autocomplete="email" required maxlength="254" class="w-full border border-ink/25 bg-transparent px-4 py-3 text-sm placeholder:text-ink/45" placeholder="La tua email"></div><div><label for="telefono" class="mb-2 block text-xs font-bold">Telefono <span class="font-normal text-ink/60">(facoltativo)</span></label><input id="telefono" type="tel" name="telefono" autocomplete="tel" maxlength="40" class="w-full border border-ink/25 bg-transparent px-4 py-3 text-sm placeholder:text-ink/45" placeholder="Il tuo numero"></div><div><label for="zona" class="mb-2 block text-xs font-bold">Dove si trova il lavoro?</label><input id="zona" name="zona" autocomplete="address-level2" maxlength="150" class="w-full border border-ink/25 bg-transparent px-4 py-3 text-sm placeholder:text-ink/45" placeholder="Comune o zona"></div></div>
+          <label for="messaggio" class="mb-2 mt-5 block text-xs font-bold">Raccontaci qualcosa <span aria-hidden="true">*</span></label><textarea id="messaggio" name="messaggio" rows="4" required maxlength="4000" class="w-full resize-y border border-ink/25 bg-transparent px-4 py-3 text-sm placeholder:text-ink/45" placeholder="Il lavoro che immagini, le tue esigenze o la tua esperienza..."></textarea>
+          <p id="email-note" class="mt-3 text-[11px] leading-5 text-ink/65">I campi con * sono obbligatori. Il modulo prepara un'email nel tuo programma di posta: potrai controllarla e inviarla. Nessun dato viene salvato dal sito.</p>
+          <p id="form-status" role="status" aria-live="polite" class="mt-4 text-xs font-semibold leading-6 text-brick"></p>
+          <button id="contact-submit" type="submit" class="mt-5 flex w-full items-center justify-between gap-5 bg-brick px-6 py-4 text-xs font-bold text-paper transition-colors hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60">Prepara la tua richiesta <i data-lucide="arrow-up-right" class="h-5 w-5" aria-hidden="true"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-ink/15">
+    <div class="mx-auto flex max-w-[1440px] flex-col justify-between gap-6 px-6 py-9 md:flex-row md:items-center md:px-12 lg:px-20"><a href="#" class="font-display text-2xl font-semibold uppercase">Costruzioni Molinari<span class="text-brick">.</span></a><p class="text-[10px] text-ink/60">&copy; <span id="year">2026</span> Costruzioni Molinari. Tutti i diritti riservati.</p><a href="#contenuto" class="inline-flex items-center gap-3 text-[10px] font-bold">Torniamo su <i data-lucide="arrow-up" class="h-4 w-4" aria-hidden="true"></i></a></div>
+    <div class="mx-auto max-w-[1440px] px-6 pb-6 text-[10px] leading-5 text-ink/55 md:px-12 lg:px-20">Immagini illustrative: Unsplash. Dati societari e area di intervento da completare prima della pubblicazione.</div>
+  </footer>
+
+  <script>
+    const contactEmail = '';
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const submitButton = document.getElementById('contact-submit');
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    function closeMenu() {
+      mobileMenu.hidden = true;
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Apri menu');
+    }
+
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      mobileMenu.hidden = isExpanded;
+      menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+      menuToggle.setAttribute('aria-label', isExpanded ? 'Apri menu' : 'Chiudi menu');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !mobileMenu.hidden) {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('header')) closeMenu();
+    });
+    matchMedia('(min-width: 768px)').addEventListener('change', closeMenu);
+
+    if (!contactEmail) {
+      formStatus.textContent = "Il recapito email dell'impresa non e' ancora configurato. Le richieste non sono al momento disponibili.";
+      submitButton.disabled = true;
+    }
+
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!contactEmail || !contactForm.reportValidity()) return;
+      const formData = new FormData(contactForm);
+      const subject = `${formData.get('tipo')} - ${formData.get('nome')}`;
+      const body = [
+        `Richiesta: ${formData.get('tipo')}`,
+        `Nome: ${formData.get('nome')}`,
+        `Email: ${formData.get('email')}`,
+        `Telefono: ${formData.get('telefono') || 'Non indicato'}`,
+        `Zona: ${formData.get('zona') || 'Non indicata'}`,
+        '', String(formData.get('messaggio'))
+      ].join('\n');
+      window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      formStatus.textContent = "Richiesta preparata. Completa l'invio nel tuo programma di posta. Se non si apre, configura un'app email sul dispositivo.";
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
